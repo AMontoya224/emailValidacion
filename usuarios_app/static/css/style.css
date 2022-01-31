@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgb(24, 24, 24);
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 1.8vw;
+    background-color: whitesmoke;
+}
+
+.contenedor{
+    background-color: white;
+    margin: 5vw 20vw;
+    border-radius: 3vw;
+    padding: 0.1vw 5vw;
+}
+
+.error{
+    height: 6vw;
+    padding: 1.5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgb(161, 12, 12);
+}
+
+h1{
+    font-size: 3vw;
+    color: rgb(12, 113, 160);
+}
+
+input{
+    width: 30vw;
+    font-size: 1.5vw;
+    padding: 0.2vw 0.8vw;
+    border-radius: 2vw;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2vw;
+}
+
+.add{
+    background-color: rgb(12, 113, 160);
+    color:white;
+    height: 3.5vw;
+    padding: 0 2vw;
+    margin: 0.6vw 0 1.7vw 0;
+    border-radius: 0.3vw;
+    border: 0.2vw solid rgb(8, 8, 8);
+    box-shadow: 0.3vw 0.3vw rgb(8, 8, 8);
+    font-size: 1.7vw;
+    cursor: pointer;
+}
+.add:hover{
+    background-color: rgb(5, 83, 119);
+}
+
+.link{
+    color: rgb(39, 39, 196);
+    text-decoration: underline;
+    border-style: none;
+    background-color: transparent;
+    margin: 0.5vw 0;
+    font-size: 1.5vw;
+    cursor: pointer;
+}

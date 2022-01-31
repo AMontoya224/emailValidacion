@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Validación del Correo
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="error">
+                {% with messages = get_flashed_messages() %}
+                    {% for message in messages %}
+                        <p>
+                            {{message}}
+                        </p>
+                    {% endfor %}
+                {% endwith %}
+            </div>
+            <form action="/decision" method="POST">
+                <div class="entrada">
+                    <label for="correo">
+                        E-mail:
+                    </label> 
+                    <input type="text" id="correo" name="correo" maxlength="45"/>
+                </div>
+                <button type="submit" class="add">
+                    Añadir
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
